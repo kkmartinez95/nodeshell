@@ -6,3 +6,7 @@ process.stdin.on('data', (data) => {
   process.stdout.write(`You typed ${cmd}`);
   process.stdout.write('\nprompt > ');
 });
+const pwdExports = require('./pwd');
+pwdExports();
+const lsExports = require('./ls');
+lsExports();
